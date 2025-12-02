@@ -1,73 +1,67 @@
-# React + TypeScript + Vite
+# 🎮 Hanging — My First Mini Game with React & TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un mini-juego simple desarrollado con **React**, **TypeScript** y **Vite**, creado como parte de mis primeros ejercicios prácticos en programación frontend.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías usadas
+- **React 18+**
+- **TypeScript**
+- **Vite**
+- **CSS**
+- **ESLint**
+- **Node.js + npm**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📦 Instalación y ejecución
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1. Clonar el repositorio
+```bash
+git clone https://github.com/Kadumendez/Hanging---My-First-Mini-Game-with-React-TypeScript.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 2. Instalar dependencias
+```bash
+npm install
 ```
+
+### 3. Ejecutar en modo desarrollo
+```bash
+npm run dev
+```
+
+### 4. Build para producción
+```bash
+npm run build
+```
+
+---
+
+## 📁 Estructura del proyecto
+
+```
+src/
+│── assets/          # Imágenes o recursos
+│── components/      # Componentes reutilizables
+│── helpers/         # Funciones auxiliares
+│── App.tsx          # Componente principal
+│── main.tsx         # Punto de entrada
+public/              # Archivos estáticos
+dist/                # Build de producción (ignorado en Git)
+vite.config.ts       # Configuración de Vite
+```
+---
+
+## 🛠️ Scripts útiles
+
+| Comando          | Descripción                         |
+|------------------|-------------------------------------|
+| `npm run dev`    | Ejecuta la app en modo desarrollo   |
+| `npm run build`  | Genera el build de producción       |
+| `npm run preview`| Previsualiza la versión final       |
+
+---
+
+## 🤝 Contribuciones
+Este es un proyecto personal de aprendizaje, pero si deseas proponer mejoras, siéntete libre de abrir un **issue** o un **pull request**.
